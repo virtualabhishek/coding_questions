@@ -3,5 +3,5 @@ Solved coding questions
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|1|[Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./algorithms/cpp/processTasksUsingServers/ProcessTasksUsingServers.cpp)|Medium|
+|0|[Binary Search](https://leetcode.com/problems/binary-search/) | [C++](./LeetCode/0.Binary_Search)|Easy|
   
