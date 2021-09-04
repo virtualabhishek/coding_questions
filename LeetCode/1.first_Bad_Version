@@ -1,0 +1,27 @@
+// The API isBadVersion is defined for you.
+// bool isBadVersion(int version);
+
+class Solution {
+public:
+    int firstBadVersion(int n) {
+        return searchfirstBad(1,n);
+    }
+
+    int searchfirstBad(int l, int r)
+    {
+
+        int m = l+(r-l)/2;  // To avoid overflow of integer when values are big
+        if(isBadVersion(m)==true)
+        {
+            if(isBadVersion(l)==true)
+            {
+                return l;
+            }
+            return searchfirstBad(l,m);
+        }
+        else
+        {
+            return searchfirstBad(m+1,r);
+        }
+    }
+};
