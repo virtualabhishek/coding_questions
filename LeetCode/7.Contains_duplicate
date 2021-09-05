@@ -1,0 +1,31 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        // Using set
+        unordered_set<int> s;
+        for(auto i : nums)
+            {
+                s.insert(i);
+            }
+        if(s.size()==nums.size())
+            return false;
+        else
+            return true;
+
+
+        // Using Map
+        //         map<int,int> count;
+        //         for(auto i : nums)
+        //         {
+        //             ++count[i];
+        //         }
+
+        //         for(auto x : count)
+        //         {
+        //             if(x.second >= 2)
+        //                 return true;
+        //         }
+        //         return false;
+    }
+};
+
