@@ -1,0 +1,89 @@
+// [Sliding Window][HashMap]
+class Solution {
+public:
+    bool checkInclusion(string s1, string s2) {
+
+        if(s1.size() > s2.size())
+            return false;
+
+        vector<int> m(26, 0);
+
+        for(int k=0;k<s1.size();k++)
+        {
+            ++m[s1[k]-'a'];
+        }
+
+        for(int i=0; i<= s2.size()-s1.size(); i++)
+        {
+            vector<int> n(26, 0);
+
+            int j=i;
+            while(j < i+s1.size())
+            {
+                ++n[s2[j]-'a'];
+                j++;
+            }
+            j=i;
+            int count=0;
+            while(j < i+s1.size())
+            {
+                if(m[s2[j]-'a'] == n[s2[j]-'a'])
+                    count++;
+                else
+                    break;
+                j++;
+            }
+            if(count == s1.size())
+                return true;
+        }
+
+        return false;
+
+    }
+};
+
+
+// Using Hashmap [Time limit exceeded]
+//
+// class Solution {
+// public:
+//     bool checkInclusion(string s1, string s2) {
+
+//         if(s1.size() > s2.size())
+//             return false;
+
+//         unordered_map<char, int> m;
+
+//         for(int k=0;k<s1.size();k++)
+//         {
+//             ++m[s1[k]];
+//         }
+
+//         for(int i=0; i<= s2.size()-s1.size(); i++)
+//         {
+//             unordered_map<char, int> n;
+
+//             int j=i;
+//             while(j < i+s1.size())
+//             {
+//                 ++n[s2[j]];
+//                 j++;
+//             }
+//             j=i;
+//             int count=0;
+//             while(j < i+s1.size())
+//             {
+//                 if(m[s2[j]] == n[s2[j]])
+//                     count++;
+//                 else
+//                     break;
+//                 j++;
+//             }
+//             if(count == s1.size())
+//                 return true;
+//         }
+
+//         return false;
+
+//     }
+// };

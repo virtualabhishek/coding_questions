@@ -16,4 +16,10 @@ Solved coding questions
 |10|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [C++](./LeetCode/10.Maximum_subarray)|Easy|
 |11|[Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./LeetCode/11.Two_sum)|Easy|
 |12|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C++](./LeetCode/12.Merge_sorted_array)|Easy|
+|13|[Middle of Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [C++](./LeetCode/13.Middle_of_Linked_List)|Easy|
+|14|[Remove nth node from end of list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [C++](./LeetCode/14.Remove_nth_node_from_end_of_list)|Medium|
+|15|[Intersection of two arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./LeetCode/15.Intersection_of_two_arrays_II)|Easy|
+|16|[Reshape the matrix](https://leetcode.com/problems/reshape-the-matrix/) | [C++](./LeetCode/16.Reshape_the_matrix)|Easy|
+|17|[Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./LeetCode/17.Longest_substring_without_repeating_characters)|Easy|
+|18|[Permutation in string](https://leetcode.com/problems/permutation-in-string/) | [C++](./LeetCode/18.Permutation_in_string)|Easy|
 
