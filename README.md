@@ -20,6 +20,8 @@ Solved coding questions
 |14|[Remove nth node from end of list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [C++](./LeetCode/14.Remove_nth_node_from_end_of_list)|Medium|
 |15|[Intersection of two arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./LeetCode/15.Intersection_of_two_arrays_II)|Easy|
 |16|[Reshape the matrix](https://leetcode.com/problems/reshape-the-matrix/) | [C++](./LeetCode/16.Reshape_the_matrix)|Easy|
-|17|[Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./LeetCode/17.Longest_substring_without_repeating_characters)|Easy|
-|18|[Permutation in string](https://leetcode.com/problems/permutation-in-string/) | [C++](./LeetCode/18.Permutation_in_string)|Easy|
+|17|[Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./LeetCode/17.Longest_substring_without_repeating_characters)|Medium|
+|18|[Permutation in string](https://leetcode.com/problems/permutation-in-string/) | [C++](./LeetCode/18.Permutation_in_string)|Medium|
+|19|[Flood Fill](https://leetcode.com/problems/flood-fill/) | [C++](./LeetCode/19.Flood_fill)|Easy|
+|20|[Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | [C++](./LeetCode/20.Max_area_of_island)|Medium|
 

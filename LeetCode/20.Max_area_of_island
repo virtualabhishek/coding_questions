@@ -1,0 +1,41 @@
+// [DFS]
+
+class Solution {
+public:
+    map<vector<int>, int> m;
+    int maxAreaOfIsland(vector<vector<int>>& grid) {
+        int max_area=0;
+        for(int i=0;i<grid.size();i++)
+        {
+            for(int j=0;j<grid[0].size();j++)
+            {
+                if(grid[i][j]==1 && m[{i,j}]!=1)
+                {
+                    int res = find_field_area(grid,i,j);
+                    max_area = (res>max_area)?res:max_area;
+                }
+            }
+        }
+        return max_area;
+    }
+
+    int find_field_area(vector<vector<int>>& grid, int r, int c)
+    {
+        if(grid[r][c]==1 && m[{r,c}]!=1)
+        {
+            m[{r,c}]=1;
+            int max_l=0,max_r=0,max_u=0,max_d=0;
+            if(c-1>=0)
+                max_l = find_field_area(grid,r,c-1);
+            if(c+1<grid[0].size())
+                max_r = find_field_area(grid,r,c+1);
+            if(r-1>=0)
+                max_u = find_field_area(grid,r-1,c);
+            if(r+1<grid.size())
+                max_d = find_field_area(grid,r+1,c);
+
+            return 1+(max_l+max_r+max_u+max_d);
+        }
+        return 0;
+    }
+};
