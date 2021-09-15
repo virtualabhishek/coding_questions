@@ -1,0 +1,79 @@
+class Solution {
+public:
+    int orangesRotting(vector<vector<int>>& grid) {
+
+        int init_fresh=0, init_rotten=0;
+        queue<pair<int,int>> rotten_index;
+        for(int i=0;i<grid.size();i++)
+        {
+            for(int j=0;j<grid[0].size();j++)
+            {
+                if(grid[i][j]==2)
+                {
+                    rotten_index.push({i,j});
+                    init_rotten++;
+                }
+                if(grid[i][j]==1)
+                    init_fresh++;
+            }
+        }
+
+        if(init_rotten == 0 && init_fresh==0) // Only empty cell
+            return 0;
+
+        if(init_fresh == 0) // No fresh
+            return 0;
+
+        int steps = 0; // Minute counter
+        while(true)
+        {
+            steps++;
+
+            queue<pair<int,int>> new_rotten;
+            while(rotten_index.size()>0)
+            {
+                pair<int,int> p = rotten_index.front();
+                rotten_index.pop();
+
+                if(p.second-1 >= 0 && grid[p.first][p.second-1]==1) //left
+                {
+                    grid[p.first][p.second-1]=2;
+                    new_rotten.push({p.first, p.second-1});
+                    init_fresh--;
+                }
+                if(p.second+1 < grid[0].size() && grid[p.first][p.second+1]==1) //right
+                {
+                    grid[p.first][p.second+1]=2;
+                    new_rotten.push({p.first, p.second+1});
+                    init_fresh--;
+                }
+                if(p.first-1 >= 0 && grid[p.first-1][p.second]==1) //up
+                {
+                    grid[p.first-1][p.second]=2;
+                    new_rotten.push({p.first-1, p.second});
+                    init_fresh--;
+                }
+                if(p.first+1 < grid.size() && grid[p.first+1][p.second]==1) //down
+                {
+                    grid[p.first+1][p.second]=2;
+                    new_rotten.push({p.first+1, p.second});
+                    init_fresh--;
+                }
+
+            }
+
+            if(new_rotten.size()>0)
+                rotten_index = new_rotten;
+
+            if(rotten_index.size()==0 && init_fresh>0)
+                return -1;
+
+            if(init_fresh == 0)
+                break;
+
+        }
+
+        return steps;
+
+    }
+};

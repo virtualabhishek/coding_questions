@@ -1,0 +1,64 @@
+// [BFS]
+
+class Solution {
+public:
+
+    vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
+        vector<vector<int>> dist(mat.size(), vector<int>(mat[0].size(), INT_MAX));
+        queue<pair<int,int>> q;
+        for(int i=0; i<mat.size(); i++)
+        {
+            for(int j=0; j<mat[0].size(); j++)
+            {
+                if(mat[i][j]==0)
+                {
+                    dist[i][j]=0;
+                    q.push({i,j});
+                }
+            }
+        }
+
+        while(q.size()>0)
+        {
+            pair<int,int> p = q.front();
+            q.pop();
+            int r = p.first;
+            int c = p.second;
+
+            if(c-1>=0)
+            {
+                if(dist[r][c-1] > dist[r][c]+1)
+                {
+                    dist[r][c-1] = dist[r][c]+1;
+                    q.push({r,c-1});
+                }
+            }
+            if(c+1 < mat[0].size())
+            {
+                if(dist[r][c+1] > dist[r][c]+1)
+                {
+                    dist[r][c+1] = dist[r][c]+1;
+                    q.push({r,c+1});
+                }
+            }
+            if(r-1>=0)
+            {
+                if(dist[r-1][c] > dist[r][c]+1)
+                {
+                    dist[r-1][c] = dist[r][c]+1;
+                    q.push({r-1,c});
+                }
+            }
+            if(r+1<mat.size())
+            {
+                if(dist[r+1][c] > dist[r][c]+1)
+                {
+                    dist[r+1][c] = dist[r][c]+1;
+                    q.push({r+1,c});
+                }
+            }
+        }
+
+        return dist;
+    }
+};
