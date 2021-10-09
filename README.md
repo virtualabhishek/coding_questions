@@ -1,8 +1,8 @@
 # coding_questions
 Solved coding questions
 
-| # | Title | Solution | Difficulty |
-|---| ----- | -------- | ---------- |
+| # | Title | Solution | Difficulty | Algorithm |
+|---| ----- | -------- | ---------- | --------- |
 |0|[Binary Search](https://leetcode.com/problems/binary-search/) | [C++](./LeetCode/0.Binary_Search)|Easy|
 |1|[First Bad Version](https://leetcode.com/problems/first-bad-version/) | [C++](./LeetCode/1.first_Bad_Version)|Easy|
 |2|[Search Insert Position](https://leetcode.com/problems/search-insert-position) | [C++](./LeetCode/2.Search_insert_position)|Easy|
@@ -21,15 +21,22 @@ Solved coding questions
 |15|[Intersection of two arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./LeetCode/15.Intersection_of_two_arrays_II)|Easy|
 |16|[Reshape the matrix](https://leetcode.com/problems/reshape-the-matrix/) | [C++](./LeetCode/16.Reshape_the_matrix)|Easy|
 |17|[Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./LeetCode/17.Longest_substring_without_repeating_characters)|Medium|
-|18|[Permutation in string](https://leetcode.com/problems/permutation-in-string/) | [C++](./LeetCode/18.Permutation_in_string)|Medium|
-|19|[Flood Fill](https://leetcode.com/problems/flood-fill/) | [C++](./LeetCode/19.Flood_fill)|Easy|
-|20|[Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | [C++](./LeetCode/20.Max_area_of_island)|Medium|
-|21|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [C++](./LeetCode/21.Merge_two_binary_trees)|Easy|
-|22|[Populating next right pointers](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [C++](./LeetCode/22.Populating_next_right_pointers)|Medium|
+|18|[Permutation in string](https://leetcode.com/problems/permutation-in-string/) | [C++](./LeetCode/18.Permutation_in_string)|Medium|Sliding Window, HashMap|
+|19|[Flood Fill](https://leetcode.com/problems/flood-fill/) | [C++](./LeetCode/19.Flood_fill)|Easy|DFS|
+|20|[Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | [C++](./LeetCode/20.Max_area_of_island)|Medium|DFS|
+|21|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [C++](./LeetCode/21.Merge_two_binary_trees)|Easy|DFS|
+|22|[Populating next right pointers](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [C++](./LeetCode/22.Populating_next_right_pointers)|Medium|Level Order Traversal|
 |23|[Merge two sorted List](https://leetcode.com/problems/merge-two-sorted-lists/) | [C++](./LeetCode/23.Merge_two_sorted_LL)|Easy|
 |24|[Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | [C++](./LeetCode/24.Reverse_a_LL)|Easy|
 |25|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [C++](./LeetCode/25.Rotting_oranges)|Medium|
 |26|[01 Matrix](https://leetcode.com/problems/01-matrix/) | [C++](./LeetCode/26.01_matrix)|Medium|
+|27|[N-queen](https://leetcode.com/problems/n-queens/) | [C++](./LeetCode/27.N-queen)|Hard|Backtracking|
+|28|[Combinations](https://leetcode.com/problems/combinations/) | [C++](./LeetCode/28.Combinations)|Medium|Backtracking|
+|29|[Permutations](https://leetcode.com/problems/permutations/) | [C++](./LeetCode/29.Permutations)|Medium|Backtracking|
+|30|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) | [C++](./LeetCode/30.Letter_case_permutation)|Medium|Backtracking|
+|31|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [C++](./LeetCode/31.Climbing_stairs)|Easy|DP, Memoization|
+|32|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [C++](./LeetCode/32.Min_cost_climbing_stairs)|Medium|DP|
+|33|[House Robber](https://leetcode.com/problems/house-robber/) | [C++](./LeetCode/33.House_robber)|Medium|DP|
 
 
 

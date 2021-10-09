@@ -1,0 +1,121 @@
+// [Backtracking]
+
+// Here we keep adding a column and place a queen
+class Solution {
+public:
+    vector<vector<string>> solveNQueens(int n) {
+        vector<vector<string>> res;
+        vector<string> nthqueen(n, string(n,'.')); // char array
+        nqueen(res, nthqueen, 0, n);
+        return res;
+    }
+
+    void nqueen(vector<vector<string>> &res, vector<string> &nthqueen, int row, int n)
+    {
+        // check if criteria satisfies
+        if(row == n)
+        {
+            res.push_back(nthqueen);
+            return;
+        }
+
+        for(int col=0;col<n;col++)
+        {
+            if(check(nthqueen, row, col, n))
+            {
+                nthqueen[row][col]='Q';
+                nqueen(res, nthqueen, row+1, n);
+                nthqueen[row][col]='.'; // if no solution then replace with '.'
+            }
+        }
+
+    }
+
+
+    bool check(vector<string> &mat, int r, int c, int n)
+    {
+        // check row for queen
+        for(int i=0;i<r;i++)
+        {
+            if(mat[i][c]=='Q')
+                return false;
+        }
+
+        // check primary diagonal
+        for(int i=r-1,j=c-1; i>=0 && j>=0; i--,j--)
+        {
+            if(mat[i][j]=='Q')
+                return false;
+        }
+
+        // check counter diagonal
+        for(int i=r-1,j=c+1; i>=0 && j<n; i--,j++)
+        {
+            if(mat[i][j]=='Q')
+                return false;
+        }
+
+        return true;
+    }
+};
+
+
+// // Here we keep adding a row and place a queen
+// class Solution {
+// public:
+//     vector<vector<string>> solveNQueens(int n) {
+//         vector<vector<string>> res;
+//         vector<string> nthqueen(n, string(n,'.')); // char array
+//         nqueen(res, nthqueen, 0, n);
+//         return res;
+//     }
+
+//     void nqueen(vector<vector<string>> &res, vector<string> &nthqueen, int col, int n)
+//     {
+//         // check if criteria satisfies
+//         if(col == n)
+//         {
+//             res.push_back(nthqueen);
+//             return;
+//         }
+
+//         for(int row=0;row<n;row++)
+//         {
+//             if(check(nthqueen, row, col, n))
+//             {
+//                 nthqueen[row][col]='Q';
+//                 nqueen(res, nthqueen, col+1, n);
+//                 nthqueen[row][col]='.'; // if no solution then replace with '.'
+//             }
+//         }
+
+//     }
+
+
+//     bool check(vector<string> &mat, int r, int c, int n)
+//     {
+//         // check row for queen
+//         for(int i=0;i<c;i++)
+//         {
+//             if(mat[r][i]=='Q')
+//                 return false;
+//         }
+
+//         // check primary diagonal
+//         for(int i=r-1,j=c-1; i>=0 && j>=0; i--,j--)
+//         {
+//             if(mat[i][j]=='Q')
+//                 return false;
+//         }
+
+//         // check counter diagonal
+//         for(int i=r+1,j=c-1; i<n && j>=0; i++,j--)
+//         {
+//             if(mat[i][j]=='Q')
+//                 return false;
+//         }
+
+//         return true;
+//     }
+// };
+

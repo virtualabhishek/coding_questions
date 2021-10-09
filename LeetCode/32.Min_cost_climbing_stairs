@@ -1,0 +1,46 @@
+// Bottom Up approach
+class Solution {
+public:
+    int minCostClimbingStairs(vector<int>& cost) {
+        unordered_map<int,int> m;
+        m[0]=cost[0];
+        m[1]=cost[1];
+
+        for(int i=2;i<cost.size();i++)
+        {
+            m[2] = cost[i] + min(m[0],m[1]);
+            m[0] = m[1];
+            m[1] = m[2];
+        }
+        return min(m[0],m[1]);
+    }
+};
+
+// Top-Down approach
+//
+// class Solution {
+// public:
+//     int minCostClimbingStairs(vector<int>& cost) {
+//         if(cost.size()==2)
+//             return min(cost[0], cost[1]);
+//         unordered_map<int,int> m;
+//         return min(find_min_cost(m,cost,0), find_min_cost(m,cost,1));
+//     }
+
+//     int find_min_cost(map<int,int> &m, vector<int>& cost, int index)
+//     {
+//         if(index>=cost.size())
+//             return 0;
+
+//         if(m[index])
+//             return m[index];
+
+//         int index_one = find_min_cost(m,cost,index+1);
+//         int index_two = find_min_cost(m,cost,index+2);
+//         m[index+1] = index_one;
+//         m[index+2] = index_two;
+//         m[index] = cost[index]+min(index_one, index_two);
+//         return m[index];
+
+//     }
+// };

@@ -1,0 +1,26 @@
+// [Backtracking]
+class Solution {
+public:
+    vector<vector<int>> combine(int n, int k) {
+        vector<vector<int>> res;
+        vector<int> combo;
+        combinations(res, combo, 1, n, k);
+        return res;
+    }
+
+    void combinations(vector<vector<int>> &res, vector<int> combo, int s, int n, int k)
+    {
+        if(combo.size()==k)
+        {
+            res.push_back(combo);
+            return;
+        }
+
+        for(int i=s;i<=n;i++)
+        {
+            combo.push_back(i);
+            combinations(res,combo,i+1,n,k);
+            combo.pop_back();
+        }
+    }
+};
