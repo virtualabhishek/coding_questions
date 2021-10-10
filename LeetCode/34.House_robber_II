@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        if(nums.size()==1)
+            return nums[0];
+        vector<int> m(nums.size(), -1);
+        int heist1 = heist(m,nums,0,nums.size()-1);
+        m.assign(nums.size(),-1);
+        int heist2 = heist(m,nums,1,nums.size());
+        int res = max(heist1, heist2);
+        return res;
+    }
+
+    int heist(vector<int> &m, vector<int> &nums, int index, int end)
+    {
+        if(index >= end)
+            return 0;
+
+        if(m[index] != -1)
+            return m[index];
+
+        int s1 = heist(m,nums,index+1,end);
+        int s2 = heist(m,nums,index+2,end);
+        m[index] = max(nums[index]+s2, s1);
+        return m[index];
+    }
+};

@@ -37,6 +37,8 @@ Solved coding questions
 |31|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [C++](./LeetCode/31.Climbing_stairs)|Easy|DP, Memoization|
 |32|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [C++](./LeetCode/32.Min_cost_climbing_stairs)|Medium|DP|
 |33|[House Robber](https://leetcode.com/problems/house-robber/) | [C++](./LeetCode/33.House_robber)|Medium|DP|
+|34|[House Robber II](https://leetcode.com/problems/house-robber-ii/) | [C++](./LeetCode/34.House_robber_II)|Medium|DP|
+|35|[Triangle](https://leetcode.com/problems/triangle/) | [C++](./LeetCode/35.Triangle)|Medium|DP|
 
 
 
