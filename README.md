@@ -39,6 +39,15 @@ Solved coding questions
 |33|[House Robber](https://leetcode.com/problems/house-robber/) | [C++](./LeetCode/33.House_robber)|Medium|DP|
 |34|[House Robber II](https://leetcode.com/problems/house-robber-ii/) | [C++](./LeetCode/34.House_robber_II)|Medium|DP|
 |35|[Triangle](https://leetcode.com/problems/triangle/) | [C++](./LeetCode/35.Triangle)|Medium|DP|
+|36|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [C++](./LeetCode/36.Pascal's_triangle)|Easy|DP|
+|37|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C++](./LeetCode/37.Linked_list_cycle)|Easy|Two pointer|
+|38|[First and Last pos in sorted array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](./LeetCode/38.First_and_last_pos_sorted_array)|Medium|Binary Search|
+|39|[Search in rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C++](./LeetCode/39.Search_in_rotated_sorted_array)|Medium|Binary Search|
+|40|[Min in rotated sorted array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [C++](./LeetCode/40.Min_in_rotated_sorted_array)|Medium|Binary Search|
+|41|[Find peak element](https://leetcode.com/problems/find-peak-element/) | [C++](./LeetCode/41.Find_peak_element)|Medium|Binary Search|
+
+
+
 
 
 
