@@ -45,6 +45,10 @@ Solved coding questions
 |39|[Search in rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C++](./LeetCode/39.Search_in_rotated_sorted_array)|Medium|Binary Search|
 |40|[Min in rotated sorted array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [C++](./LeetCode/40.Min_in_rotated_sorted_array)|Medium|Binary Search|
 |41|[Find peak element](https://leetcode.com/problems/find-peak-element/) | [C++](./LeetCode/41.Find_peak_element)|Medium|Binary Search|
+|42|[Remove duplicates from sorted list](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [C++](./LeetCode/42.Remove_duplicates_from_sorted_list)|Easy|Two pointers|
+|43|[Remove duplicates from sorted list II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [C++](./LeetCode/43.Remove_duplicates_from_sorted_list_II)|Medium|Two pointers|
+|44|[3Sum](https://leetcode.com/problems/3sum/) | [C++](./LeetCode/44.3Sum)|Medium|Two pointers|
+
 
 
 
