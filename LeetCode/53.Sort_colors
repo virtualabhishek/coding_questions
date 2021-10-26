@@ -1,0 +1,52 @@
+// Dutch National flag algorithm
+// [, i): 0
+// [i, j]: 1
+// (k, ...]: 2
+// Once j meets k, the sorting is complete
+
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int l=0;
+        int m=l;
+        int r=nums.size()-1;
+
+        while(m<=r)
+        {
+            if(nums[m]==0)
+                swap(nums[l++],nums[m++]);
+            else if(nums[m]==1)
+                m++;
+            else
+                swap(nums[m],nums[r--]);
+        }
+    }
+};
+
+// class Solution {
+// public:
+//     void sortColors(vector<int>& nums) {
+//         int l=0;
+//         int ptr=0;
+//         int count_1 = 0;
+//         while(ptr<nums.size())
+//         {
+//             if(nums[ptr]==0)
+//             {
+//                 nums[l++]=0;
+//             }
+//             if(nums[ptr]==1)
+//                 count_1++;
+//             ptr++;
+//         }
+//         while(l<nums.size() && count_1!=0)
+//         {
+//             nums[l++]=1;
+//             count_1--;
+//         }
+//         while(l<nums.size())
+//         {
+//             nums[l++]=2;
+//         }
+//     }
+// };

@@ -48,9 +48,16 @@ Solved coding questions
 |42|[Remove duplicates from sorted list](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [C++](./LeetCode/42.Remove_duplicates_from_sorted_list)|Easy|Two pointers|
 |43|[Remove duplicates from sorted list II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [C++](./LeetCode/43.Remove_duplicates_from_sorted_list_II)|Medium|Two pointers|
 |44|[3Sum](https://leetcode.com/problems/3sum/) | [C++](./LeetCode/44.3Sum)|Medium|Two pointers|
-
-
-
+|45|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C++](./LeetCode/45.Backspace_string_compare)|Easy|Stack|
+|46|[Interval list intersection](https://leetcode.com/problems/interval-list-intersections/) | [C++](./LeetCode/46.Interval_list_intersection)|Medium||
+|47|[Container_with_most_water](https://leetcode.com/problems/container-with-most-water/) | [C++](./LeetCode/47.Container_with_most_water)|Medium|Greedy|
+|48|[Finding all anagrams in string](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [C++](./LeetCode/48.Finding_all_anagrams_in_string)|Medium|Sliding Window|
+|49|[Insert into Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | [C++](./LeetCode/49.Insert_into_binary_search_tree)|Medium|Binary Tree|
+|50|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [C++](./LeetCode/50.Validate_binary_search_tree)|Medium|Binary Tree|
+|51|[Single Number](https://leetcode.com/problems/single-number/) | [C++](./LeetCode/51.Single_number)|Easy|Bit Manipulation|
+|52|[Majority Element](https://leetcode.com/problems/majority-element/) | [C++](./LeetCode/52.Majority_element)|Easy|Moore's voting algorithm|
+|53|[Sort Colors](https://leetcode.com/problems/sort-colors/) | [C++](./LeetCode/53.Sort_colors)|Medium|Dutch National flag algorithm|
+|54|[Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [C++](./LeetCode/54.Merge_intervals)|Medium|Sorting|
 
 
 
