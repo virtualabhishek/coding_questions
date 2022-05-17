@@ -2,7 +2,7 @@
 Solved coding questions
 
 | # | Title | Solution | Difficulty | Algorithm |
-|---| ----- | -------- | ---------- | --------- |
+|--| ----- | -------- | ---------- | --------- |
 |0|[Binary Search](https://leetcode.com/problems/binary-search/) | [C++](./LeetCode/0.Binary_Search)|Easy|
 |1|[First Bad Version](https://leetcode.com/problems/first-bad-version/) | [C++](./LeetCode/1.first_Bad_Version)|Easy|
 |2|[Search Insert Position](https://leetcode.com/problems/search-insert-position) | [C++](./LeetCode/2.Search_insert_position)|Easy|
@@ -58,6 +58,8 @@ Solved coding questions
 |52|[Majority Element](https://leetcode.com/problems/majority-element/) | [C++](./LeetCode/52.Majority_element)|Easy|Moore's voting algorithm|
 |53|[Sort Colors](https://leetcode.com/problems/sort-colors/) | [C++](./LeetCode/53.Sort_colors)|Medium|Dutch National flag algorithm|
 |54|[Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [C++](./LeetCode/54.Merge_intervals)|Medium|Sorting|
+|55|[Kth_largest_element](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Python](./LeetCode/55.Kth_largest_element)|Medium|Heap|
+|56|[Top_k_frequent_elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Python](./LeetCode/56.Top_k_frequent_elements)|Medium|Heap|
 
 
 
