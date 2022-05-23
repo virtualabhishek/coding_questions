@@ -1,0 +1,30 @@
+class UnionFind:
+    def __init__(self, n):
+        self.root = [i for i in range(n)]
+
+    def find(self, x):
+        while(x!=self.root[x]):
+            x=self.root[x];
+        return self.root[x];
+
+    def union(self, x, y):
+        rootX = self.find(x)
+        rootY = self.find(y)
+        if(rootX == rootY):
+            return False
+        if rootX != rootY:
+            self.root[rootY] = rootX
+        return True
+
+
+class Solution:
+    def validTree(self, n: int, edges: List[List[int]]) -> bool:
+        if(len(edges) != n-1):
+            return False
+
+        ob = UnionFind(n)
+        for edge in edges:
+            if(ob.union(edge[0], edge[1]) == False):
+                return False
+
+        return True

@@ -60,6 +60,12 @@ Solved coding questions
 |54|[Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [C++](./LeetCode/54.Merge_intervals)|Medium|Sorting|
 |55|[Kth_largest_element](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Python](./LeetCode/55.Kth_largest_element)|Medium|Heap|
 |56|[Top_k_frequent_elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Python](./LeetCode/56.Top_k_frequent_elements)|Medium|Heap|
+|57|[Number of provinces](https://leetcode.com/problems/number-of-provinces/) | [Python](./LeetCode/57.Number_of_provinces)|Medium|Graph|
+|58|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [Python](./LeetCode/58.Graph_valid_tree)|Medium|Graph|
+|59|[Number of components in an undirected graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Python](./LeetCode/59.Number_of_components_undirected_graph)|Medium|Graph|
+|60|[The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) | [Python](./LeetCode/60.Earliest_moment_when_everyone_became_friends)|Medium|Graph|
+|61|[Smallest String with swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | [Python](./LeetCode/61.Smallest_string_with_swaps)|Medium|Graph|
+|62|[Find_if_path_exists_in_graph](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [Python](./LeetCode/62.Find_if_path_exists_in_graph)|Easy|Graph|
 
 
 

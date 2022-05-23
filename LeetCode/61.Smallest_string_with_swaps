@@ -1,0 +1,41 @@
+class UnionFind:
+    def __init__(self,n):
+        self.root = [i for i in range(n)]
+
+    def find(self, x):
+        if(x==self.root[x]):
+            return x
+        self.root[x] = self.find(self.root[x])
+        return self.root[x]
+
+    def union(self, x, y):
+        rootX = self.find(x)
+        rootY = self.find(y)
+        if(rootX != rootY):
+            self.root[rootY] = rootX
+
+class Solution:
+    def smallestStringWithSwaps(self, s: str, pairs: List[List[int]]) -> str:
+        ob = UnionFind(len(s))
+        for x,y in pairs:
+            ob.union(x,y)
+
+        roots_dict = {}
+        for i in range(len(s)):
+            root = ob.find(i)
+            if root in roots_dict:
+                roots_dict[root].append(i)
+            else:
+                roots_dict[root] = [i]
+
+        s = list(s)
+        for key,value in roots_dict.items():
+            index_list = value
+            t = ""
+            for i in index_list:
+                t = t + s[i]
+            t = ''.join(sorted(t))
+            for i in range(len(index_list)):
+                s[index_list[i]] = t[i]
+
+        return ''.join(s)

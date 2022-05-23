@@ -1,0 +1,26 @@
+class UnionFind:
+    def __init__(self, n):
+        self.root = [i for i in range(n)]
+
+    def find(self, x):
+        if(x == self.root[x]):
+            return x
+        self.root[x] = self.find(self.root[x])
+        return self.root[x]
+
+    def union(self, x, y):
+        rootX = self.find(x)
+        rootY = self.find(y)
+        if rootX != rootY:
+            self.root[rootY] = rootX
+
+
+class Solution:
+    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+        ob = UnionFind(n)
+        for x,y in edges:
+            ob.union(x, y)
+        s = set()
+        for i in ob.root:
+            s.add(ob.find(i));
+        return len(s)
