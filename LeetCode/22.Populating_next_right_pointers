@@ -47,3 +47,27 @@ public:
         return root;
     }
 };
+
+
+# class Solution:
+#     def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
+#         if not root:
+#             return root
+
+#         queue = deque([root, None])
+
+#         while queue:
+#             node = queue.popleft()
+
+#             if node == None:
+#                 if queue:
+#                     queue.append(None)
+#                 continue
+
+#             node.next = queue[0]
+
+#             if node.left and node.right:
+#                 queue.append(node.left)
+#                 queue.append(node.right)
+
+#         return root

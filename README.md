@@ -66,7 +66,8 @@ Solved coding questions
 |60|[The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) | [Python](./LeetCode/60.Earliest_moment_when_everyone_became_friends)|Medium|Graph|
 |61|[Smallest String with swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | [Python](./LeetCode/61.Smallest_string_with_swaps)|Medium|Graph|
 |62|[Find_if_path_exists_in_graph](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [Python](./LeetCode/62.Find_if_path_exists_in_graph)|Easy|Graph|
-
-
-
+|63|[All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | [Python](./LeetCode/63.All_paths_from_sorce_to_target)|Medium|Graph|
+|64|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | [Python](./LeetCode/64.Reconstruct_itinerary)|Hard|Graph|
+|65|[All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [Python](./LeetCode/65.All_paths_from_source_leads_to_destination)|Medium|Graph|
+|66|[Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Python](./LeetCode/66.Shortest_path_in_binary_matrix)|Medium|Graph|
 

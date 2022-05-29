@@ -1,0 +1,44 @@
+class Solution:
+    def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
+        if grid[0][0]!=0 or grid[len(grid)-1][len(grid)-1]!=0:
+            return -1
+
+        queue = deque([(0,0)])
+        seen = {(0,0)}
+        level = 1
+
+        def find_neighbors(grid, node):
+            neighbors = []
+
+            cells = [(1,0),(-1,0),(0,1),(0,-1),(-1,-1),(1,1),(1,-1),(-1,1)]
+
+            for a,b in cells:
+                x,y = node
+                x = x+a
+                y = y+b
+                if x>=0 and x<len(grid) and y>=0 and y<len(grid):
+                    if(grid[x][y] == 0):
+                        neighbors.append((x,y))
+            return neighbors
+
+        while queue:
+
+            nodes_to_process = len(queue)
+
+            for _ in range(nodes_to_process):
+                node = queue.popleft()
+
+                if node == (len(grid)-1, len(grid)-1):
+                    return level
+
+                neighbors = find_neighbors(grid, node)
+
+                for neighbor in neighbors:
+                    if neighbor not in seen:
+                        seen.add(neighbor)
+                        queue.append(neighbor)
+            level += 1
+
+
+        return -1
+

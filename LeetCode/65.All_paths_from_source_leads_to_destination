@@ -1,0 +1,32 @@
+class Solution:
+    def leadsToDestination(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+
+        adj_list = [[] for _ in range(n)]
+        for x,y in edges:
+            adj_list[x].append(y)
+
+        # To test if there are no outgoing edges from destination
+        if len(adj_list[destination]) > 0:
+            return False
+
+
+        # Test cycles
+        seen = set()
+
+        def dfs(s):
+
+            if len(adj_list[s])==0 and s != destination:
+                return False
+
+            for neighbor in adj_list[s]:
+                if neighbor in seen:
+                    return False
+
+                seen.add(neighbor)
+                if dfs(neighbor) == False:
+                    return False
+                seen.remove(neighbor)
+
+            return True
+
+        return dfs(source)
